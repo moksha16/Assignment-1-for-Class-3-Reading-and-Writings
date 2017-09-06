@@ -1,0 +1,16 @@
+#Hands On Exercise 1 
+
+install.packages("data.table")
+install.packages("datasets")
+library("datasets")
+
+setwd("~/Downloads")
+
+sample_wom<-data.frame(women)
+
+mean.h=mean(women$height)
+mean.w=mean(women$weight)
+
+women<-subset(women,height>mean.height & weight<mean.weight)
+
+#No results for such women found
