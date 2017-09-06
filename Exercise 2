@@ -1,0 +1,8 @@
+#Question 1
+setwd("C:\\Moksha\\MICA\\PGP2\\AMMA\\AMMA Assignment")
+
+Infant_mort<- read_csv("G:/THE MICA EPISODE/2nd YEAR/AMMA/Hands on Exercises/Infant mortality rates.csv")
+
+mortality_rates$`Flag Codes`<- NULL
+
+View(mortality_rates)
