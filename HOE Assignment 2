@@ -1,0 +1,15 @@
+#Creating a date frame of 15 Indian cities and their population size
+
+install.packages("rvest")
+library("rvest")
+install.packages("xml2")
+library("xml2")
+
+citylink="http://www.worldatlas.com/articles/the-biggest-cities-in-india.html"
+city= read_html(city_link)
+c_table=html_nodes(city_file,"table")
+
+city_table<-html_table(city_table,fill=TRUE)
+View(city_table)
+cdata=as.data.frame(city_table_final)
+view(cdata)
